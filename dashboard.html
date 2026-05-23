@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+
+<div class="container">
+
+    <h1>💡 Enter Your Problem</h1>
+
+    <textarea id="problemInput" placeholder="Describe your problem..."></textarea>
+
+    <button onclick="generateIdea()">Generate Idea</button>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <div id="resultBox" class="cards hidden">
+
+        <h2 id="startupName"></h2>
+
+        <div class="card"><b>Solution:</b><p id="idea"></p></div>
+        <div class="card"><b>Audience:</b><p id="audience"></p></div>
+        <div class="card"><b>Strategy:</b><p id="strategy"></p></div>
+        <div class="card"><b>Revenue:</b><p id="revenue"></p></div>
+        <div class="card"><b>Funding:</b><p id="funding"></p></div>
+        <div class="card"><b>Market:</b><p id="market"></p></div>
+        <div class="card"><b>USP:</b><p id="pitch"></p></div>
+
+        <div class="card">
+            <h3>📊 Profit & Loss</h3>
+            <canvas id="chart"></canvas>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
